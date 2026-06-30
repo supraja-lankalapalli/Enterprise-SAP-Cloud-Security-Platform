@@ -2,36 +2,48 @@
 
 ## Background
 
-Modern enterprises use SAP to manage critical business operations such as Finance, Human Resources, Procurement, Sales, and Supply Chain Management. As organizations grow, managing user identities, roles, and access across multiple SAP modules becomes increasingly complex. A secure Identity and Access Management (IAM) strategy is essential to protect sensitive business data and maintain operational efficiency.
+GlobalTech Solutions is a multinational enterprise with over 12,000 employees operating across Finance, Human Resources, Procurement, Sales, IT, Security, and Internal Audit departments. The organization uses SAP S/4HANA to manage critical business operations and AWS Cloud to host supporting applications and infrastructure.
 
-## Problem Statement
+As the company continues to grow, managing user identities, business roles, and application access becomes increasingly complex. A secure Identity and Access Management (IAM) strategy is required to protect sensitive business information and maintain operational efficiency.
 
-Many organizations face challenges in controlling user access, enforcing the Principle of Least Privilege, and maintaining compliance with internal security policies and industry regulations. Manual access management increases the risk of:
+## Business Problem
 
-- Unauthorized access
+The organization currently manages user access manually across multiple SAP modules. This process creates several security and operational challenges:
+
+- Excessive user permissions
+- Unauthorized access to sensitive business data
 - Segregation of Duties (SoD) conflicts
-- Excessive permissions
-- Human error
-- Audit findings
+- Delays in onboarding and offboarding employees
+- Compliance and audit findings
+- Limited visibility into user activities
+
+These challenges increase security risks and make it difficult to maintain regulatory compliance.
 
 ## Proposed Solution
 
-This project demonstrates a secure SAP Identity and Access Management solution by implementing:
+This project proposes the design of an Enterprise SAP Cloud Security Platform that integrates SAP security with AWS cloud services.
 
+The solution includes:
+
+- SAP Identity and Access Management (IAM)
 - Role-Based Access Control (RBAC)
-- Principle of Least Privilege
 - Joiner, Mover, Leaver (JML) process
-- Segregation of Duties (SoD)
+- Principle of Least Privilege
+- Segregation of Duties (SoD) analysis
 - AWS IAM integration
-- CloudTrail for auditing
-- CloudWatch for monitoring
+- AWS CloudTrail for auditing
+- AWS CloudWatch for monitoring
 - Infrastructure automation using Terraform
+- Python automation for user onboarding and audit reporting
 
 ## Expected Benefits
 
-- Improved security
+The proposed solution will provide:
+
+- Improved enterprise security
+- Faster user provisioning
 - Reduced insider threats
-- Faster user onboarding
-- Better compliance
+- Better compliance with security standards
 - Simplified access reviews
-- Strong audit readiness
+- Improved audit readiness
+- Centralized identity and access management
