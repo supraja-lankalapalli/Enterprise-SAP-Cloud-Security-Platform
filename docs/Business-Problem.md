@@ -2,7 +2,7 @@
 
 ## Background
 
-GlobalTech Solutions is a multinational enterprise with over 12,000 employees operating across Finance, Human Resources, Procurement, Sales, IT, Security, and Internal Audit departments. The organization uses SAP S/4HANA to manage critical business operations and AWS Cloud to host supporting applications and infrastructure.
+SL Cloud Technologies is a multinational enterprise with over 12,000 employees operating across Finance, Human Resources, Procurement, Sales, IT, Security, and Internal Audit departments. The organization uses SAP S/4HANA to manage critical business operations and AWS Cloud to host supporting applications and infrastructure.
 
 As the company continues to grow, managing user identities, business roles, and application access becomes increasingly complex. A secure Identity and Access Management (IAM) strategy is required to protect sensitive business information and maintain operational efficiency.
 
