@@ -6,6 +6,7 @@ To support business operations, the organization uses SAP S/4HANA as its Enterpr
 
 As the business continues to grow, managing user identities, business roles, and access permissions across SAP applications becomes increasingly complex. Ensuring secure access while maintaining operational efficiency has become a critical business requirement.
 
+---
 
 ## Business Problem
 
@@ -20,6 +21,7 @@ The organization currently relies on manual processes to provision users and man
 * Limited visibility into user activities
 
 Without a centralized identity and access management strategy, these challenges increase security risks and reduce operational efficiency.
+
 
 ## Proposed Solution
 
@@ -38,6 +40,7 @@ The proposed solution includes:
 * Amazon CloudWatch for monitoring
 * Infrastructure as Code using Terraform
 * Python automation for user provisioning and security reporting
+
 
 ## Expected Benefits
 
