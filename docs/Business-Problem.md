@@ -21,7 +21,7 @@ The organization currently relies on manual processes to provision users and man
 * Limited visibility into user activities
 
 Without a centralized identity and access management strategy, these challenges increase security risks and reduce operational efficiency.
-
+--
 ## Proposed Solution
 
 This project designs an Enterprise SAP Cloud Security Platform that integrates SAP security with AWS cloud services to provide secure and centralized identity and access management.
@@ -40,6 +40,7 @@ The proposed solution includes:
 * Infrastructure as Code using Terraform
 * Python automation for user provisioning and security reporting
 
+--
 ## Expected Benefits
 
 Implementing this solution will provide:
