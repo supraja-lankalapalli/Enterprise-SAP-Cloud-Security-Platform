@@ -21,6 +21,7 @@ The organization currently relies on manual processes to provision users and man
 * Limited visibility into user activities
 
 Without a centralized identity and access management strategy, these challenges increase security risks and reduce operational efficiency.
+
 --
 ## Proposed Solution
 
