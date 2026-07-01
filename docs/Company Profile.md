@@ -52,8 +52,6 @@ To protect business-critical information, SL Cloud Technologies follows enterpri
 * Auditing using AWS CloudTrail
 
 ---
-
 ## Business Units
 
 SL Cloud Technologies is committed to providing secure, scalable, and compliant enterprise cloud solutions while protecting critical business systems through modern cloud security architecture and identity management practices.
-
