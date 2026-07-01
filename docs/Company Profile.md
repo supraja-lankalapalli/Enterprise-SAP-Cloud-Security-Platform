@@ -14,7 +14,7 @@ To support its global business operations, SL Cloud Technologies uses SAP S/4HAN
 | -------------- | --------------------------------------- |
 | Company Name   | SL Cloud Technologies                   |
 | Industry       | Cloud Computing & Enterprise Technology |
-| Headquarters   | Austin, Texas, USA                      |
+| Headquarters   | Wisconsin, USA                      |
 | Employees      | 12,500+                                 |
 | ERP Platform   | SAP S/4HANA                             |
 | Cloud Platform | Amazon Web Services (AWS)               |
