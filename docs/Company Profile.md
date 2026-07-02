@@ -25,14 +25,14 @@ To support its global business operations, SL Cloud Technologies uses SAP S/4HAN
 
 SL Cloud Technologies consists of the following business departments:
 
-* Finance
-* Human Resources (HR)
-* Procurement
-* Sales
-* Information Technology (IT)
-* Security Operations
-* Internal Audit
-* Executive Management
+* Finance – Financial reporting, budgeting, and accounting.
+* Human Resources (HR) – Employee lifecycle and workforce management.
+* Procurement – Vendor management and purchasing.
+* Sales – Customer relationship and revenue operations.
+* Information Technology (IT) – Infrastructure and application support.
+* Security Operations – Identity, access management, and cybersecurity.
+* Internal Audit – Compliance and risk assessments.
+* Executive Management – Strategic planning and governance.
 
 Each department has specific business responsibilities and receives access only to the SAP applications and AWS resources required to perform its job functions.
 
