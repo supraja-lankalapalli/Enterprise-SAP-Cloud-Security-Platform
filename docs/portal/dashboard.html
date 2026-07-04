@@ -1,50 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enterprise Dashboard</title>
-
+    <title>Dashboard - SL Cloud Technologies</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+<header class="main-header">
     <h1>SL Cloud Technologies</h1>
     <p>Enterprise SAP Cloud Security Platform</p>
 </header>
 
-<div class="dashboard">
+<nav class="navbar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="departments.html">Departments</a>
+    <a href="user-management.html">Users</a>
+    <a href="role-management.html">Roles</a>
+    <a href="access-requests.html">Access Requests</a>
+</nav>
 
-    <h2>Security Administration Dashboard</h2>
+<main class="page-container">
 
-    <div class="cards">
+    <section class="welcome-section">
+        <h2>Security Administration Dashboard</h2>
+        <p>Centralized identity, access, role, and security monitoring for SL Cloud Technologies.</p>
+    </section>
 
-        <div class="card">
-            <h3>Departments</h3>
-            <p>8 Business Units</p>
-        </div>
+    <section class="cards">
 
-        <div class="card">
+        <a href="departments.html" class="card">
+            <h3>Business Units</h3>
+            <p>8 Departments</p>
+        </a>
+
+        <a href="user-management.html" class="card">
             <h3>SAP Users</h3>
-            <p>1,250 Active Users</p>
-        </div>
+            <p>16 Users</p>
+        </a>
 
-        <div class="card">
-            <h3>AWS IAM Users</h3>
-            <p>235 IAM Identities</p>
-        </div>
+        <a href="role-management.html" class="card">
+            <h3>SAP Roles</h3>
+            <p>16 Roles</p>
+        </a>
 
-        <div class="card">
-            <h3>Pending Requests</h3>
-            <p>18 Access Requests</p>
-        </div>
+        <a href="access-requests.html" class="card">
+            <h3>Access Requests</h3>
+            <p>18 Pending</p>
+        </a>
 
-    </div>
+    </section>
 
-</div>
+    <section class="activity-section">
+        <h2>Recent Security Activity</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Activity ID</th>
+                    <th>Action</th>
+                    <th>Module</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>ACT001</td>
+                    <td>User access reviewed</td>
+                    <td>SAP IAM</td>
+                    <td>Completed</td>
+                </tr>
+
+                <tr>
+                    <td>ACT002</td>
+                    <td>High-risk role detected</td>
+                    <td>RBAC</td>
+                    <td>Review Required</td>
+                </tr>
+
+                <tr>
+                    <td>ACT003</td>
+                    <td>CloudTrail audit event logged</td>
+                    <td>AWS Security</td>
+                    <td>Logged</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</main>
 
 <script src="app.js"></script>
 

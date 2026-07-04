@@ -1,124 +1,62 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background:#eef2f7;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef2f7;
+    color: #1f2937;
 }
 
-header{
-    background:#0b1f3a;
-    color:white;
-    text-align:center;
-    padding:25px;
+.main-header,
+header {
+    background: #0b1f3a;
+    color: white;
+    text-align: center;
+    padding: 28px;
 }
 
-header h1{
-    font-size:32px;
-    margin-bottom:8px;
+.main-header h1,
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
 }
 
-header p{
-    color:#d6dce8;
+.main-header p,
+header p {
+    color: #d6dce8;
 }
 
+.navbar {
+    background: #102a4c;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 14px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+.navbar a:hover {
+    background: #2563eb;
+}
+
+.page-container,
+.dashboard-container,
+.dashboard,
 .hero,
-.login-container,
-.dashboard{
-    width:90%;
-    max-width:1100px;
-    margin:50px auto;
-    background:white;
-    padding:40px;
-    border-radius:15px;
-    box-shadow:0 8px 25px rgba(0,0,0,.15);
-}
-
-.hero{
-    text-align:center;
-}
-
-.hero h2{
-    margin-bottom:20px;
-}
-
-.hero p{
-    margin-bottom:30px;
-}
-
-.login-container{
-    max-width:450px;
-}
-
-.login-container h1,
-.login-container h2{
-    text-align:center;
-    margin-bottom:20px;
-}
-
-input{
-    width:100%;
-    padding:14px;
-    margin-bottom:18px;
-    border:1px solid #ccc;
-    border-radius:8px;
-}
-
-button{
-    width:100%;
-    padding:14px;
-    background:#2563eb;
-    color:white;
-    border:none;
-    border-radius:8px;
-    font-size:16px;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#1d4ed8;
-}
-
-.dashboard h2{
-    text-align:center;
-    margin-bottom:40px;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:#f8fafc;
-    padding:30px;
-    border-radius:12px;
-    text-align:center;
-    transition:.3s;
-    border-left:6px solid #2563eb;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-}
-
-.card h3{
-    color:#0b1f3a;
-    margin-bottom:15px;
-}
-
-.card p{
-    font-size:18px;
-    font-weight:bold;
-    color:#2563eb;
-}
-.dashboard-container {
+.login-container {
     width: 90%;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 50px auto;
     background: white;
     padding: 40px;
@@ -126,15 +64,74 @@ button:hover{
     box-shadow: 0 8px 25px rgba(0,0,0,.15);
 }
 
-.dashboard-container h2 {
+.hero,
+.login-container {
+    max-width: 520px;
     text-align: center;
-    margin-bottom: 30px;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.welcome-section h2,
+.dashboard-container h2,
+.dashboard h2 {
     color: #0b1f3a;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.welcome-section p {
+    color: #475569;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-bottom: 45px;
+}
+
+.card {
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+    border-left: 6px solid #2563eb;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #eef6ff;
+}
+
+.card h3 {
+    color: #0b1f3a;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.activity-section h2 {
+    color: #0b1f3a;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 20px;
 }
 
 th {
@@ -151,4 +148,28 @@ td {
 
 tr:hover {
     background: #f1f5f9;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #1d4ed8;
 }
