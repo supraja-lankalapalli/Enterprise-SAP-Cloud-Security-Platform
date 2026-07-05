@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Logs - SL Cloud Technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="main-header">
+    <h1>SL Cloud Technologies</h1>
+    <p>Enterprise SAP Cloud Security Platform</p>
+</header>
+
+<nav class="navbar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="departments.html">Departments</a>
+    <a href="user-management.html">Users</a>
+    <a href="role-management.html">Roles</a>
+    <a href="access-requests.html">Access Requests</a>
+    <a href="audit-logs.html">Audit Logs</a>
+
+    <span class="nav-spacer"></span>
+
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+</nav>
+
+<div class="dashboard-container">
+
+    <h2>Audit Logs</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Audit ID</th>
+                <th>User</th>
+                <th>Action</th>
+                <th>Module</th>
+                <th>Timestamp</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr><td>AUD001</td><td>supraja</td><td>Logged into portal</td><td>Authentication</td><td>2026-07-05 09:15 AM</td><td class="status-approved">Success</td></tr>
+            <tr><td>AUD002</td><td>supraja</td><td>Reviewed SAP users</td><td>User Management</td><td>2026-07-05 09:22 AM</td><td class="status-approved">Completed</td></tr>
+            <tr><td>AUD003</td><td>supraja</td><td>Approved access request REQ002</td><td>Access Requests</td><td>2026-07-05 09:30 AM</td><td class="status-approved">Approved</td></tr>
+            <tr><td>AUD004</td><td>supraja</td><td>Rejected access request REQ006</td><td>Access Requests</td><td>2026-07-05 09:35 AM</td><td class="status-rejected">Rejected</td></tr>
+            <tr><td>AUD005</td><td>supraja</td><td>Reviewed high-risk role</td><td>Role Management</td><td>2026-07-05 09:42 AM</td><td class="status-pending">Review Required</td></tr>
+        </tbody>
+    </table>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
