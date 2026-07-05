@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBAC Matrix - SL Cloud Technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="main-header">
+    <h1>SL Cloud Technologies</h1>
+    <p>Enterprise SAP Cloud Security Platform</p>
+</header>
+
+<nav class="navbar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="departments.html">Departments</a>
+    <a href="user-management.html">Users</a>
+    <a href="role-management.html">Roles</a>
+    <a href="access-requests.html">Access Requests</a>
+    <a href="audit-logs.html">Audit Logs</a>
+    <a href="rbac-matrix.html">RBAC Matrix</a>
+
+    <span class="nav-spacer"></span>
+
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+</nav>
+
+<div class="dashboard-container">
+
+    <h2>RBAC Matrix</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Role ID</th>
+                <th>SAP Role</th>
+                <th>Department</th>
+                <th>Read</th>
+                <th>Create</th>
+                <th>Update</th>
+                <th>Delete</th>
+                <th>Permission Level</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr><td>R001</td><td>SAP_FIN_USER</td><td>Finance</td><td>Yes</td><td>No</td><td>No</td><td>No</td><td>Basic</td></tr>
+            <tr><td>R002</td><td>SAP_FIN_ANALYST</td><td>Finance</td><td>Yes</td><td>Yes</td><td>No</td><td>No</td><td>Standard</td></tr>
+
+            <tr><td>R003</td><td>SAP_HR_USER</td><td>Human Resources (HR)</td><td>Yes</td><td>No</td><td>No</td><td>No</td><td>Basic</td></tr>
+            <tr><td>R004</td><td>SAP_HR_MANAGER</td><td>Human Resources (HR)</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td><td>Standard</td></tr>
+
+            <tr><td>R005</td><td>SAP_PROC_USER</td><td>Procurement</td><td>Yes</td><td>No</td><td>No</td><td>No</td><td>Basic</td></tr>
+            <tr><td>R006</td><td>SAP_PROC_APPROVER</td><td>Procurement</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td><td>Approver</td></tr>
+
+            <tr><td>R007</td><td>SAP_SALES_USER</td><td>Sales</td><td>Yes</td><td>No</td><td>No</td><td>No</td><td>Basic</td></tr>
+            <tr><td>R008</td><td>SAP_SALES_MANAGER</td><td>Sales</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td><td>Standard</td></tr>
+
+            <tr><td>R009</td><td>SAP_BASIS_ADMIN</td><td>Information Technology (IT)</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Administrator</td></tr>
+            <tr><td>R010</td><td>SAP_IT_SUPPORT</td><td>Information Technology (IT)</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td><td>Support</td></tr>
+
+            <tr><td>R011</td><td>SAP_SECURITY_ADMIN</td><td>Security Operations</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Administrator</td></tr>
+            <tr><td>R012</td><td>SAP_SECURITY_ANALYST</td><td>Security Operations</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td><td>Security Analyst</td></tr>
+
+            <tr><td>R013</td><td>SAP_AUDITOR</td><td>Internal Audit</td><td>Yes</td><td>No</td><td>No</td><td>No</td><td>Read Only</td></tr>
+            <tr><td>R014</td><td>SAP_AUDIT_VIEWER</td><td>Internal Audit</td><td>Yes</td><td>No</td><td>No</td><td>No</td><td>Read Only</td></tr>
+
+            <tr><td>R015</td><td>SAP_EXEC_VIEWER</td><td>Executive Management</td><td>Yes</td><td>No</td><td>No</td><td>No</td><td>Executive View</td></tr>
+            <tr><td>R016</td><td>SAP_EXEC_REPORTING</td><td>Executive Management</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td><td>Reporting</td></tr>
+        </tbody>
+    </table>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
