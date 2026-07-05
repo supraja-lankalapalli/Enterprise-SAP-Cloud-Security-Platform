@@ -20,6 +20,10 @@
     <a href="user-management.html">Users</a>
     <a href="role-management.html">Roles</a>
     <a href="access-requests.html">Access Requests</a>
+
+    <span class="nav-spacer"></span>
+
+    <button id="logoutBtn" class="logout-btn">Logout</button>
 </nav>
 
 <main class="page-container">
@@ -48,12 +52,12 @@
 
         <a href="access-requests.html" class="card">
             <h3>Access Requests</h3>
-            <p>18 Pending</p>
+            <p>8 Requests</p>
         </a>
 
     </section>
 
-    <section class="activity-section">
+    <section>
         <h2>Recent Security Activity</h2>
 
         <table>
@@ -71,21 +75,21 @@
                     <td>ACT001</td>
                     <td>User access reviewed</td>
                     <td>SAP IAM</td>
-                    <td>Completed</td>
+                    <td class="status-approved">Completed</td>
                 </tr>
 
                 <tr>
                     <td>ACT002</td>
                     <td>High-risk role detected</td>
                     <td>RBAC</td>
-                    <td>Review Required</td>
+                    <td class="status-pending">Review Required</td>
                 </tr>
 
                 <tr>
                     <td>ACT003</td>
                     <td>CloudTrail audit event logged</td>
                     <td>AWS Security</td>
-                    <td>Logged</td>
+                    <td class="status-active">Logged</td>
                 </tr>
             </tbody>
         </table>

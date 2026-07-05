@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Requests - SL Cloud Technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="main-header">
+    <h1>SL Cloud Technologies</h1>
+    <p>Enterprise SAP Cloud Security Platform</p>
+</header>
+
+<nav class="navbar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="departments.html">Departments</a>
+    <a href="user-management.html">Users</a>
+    <a href="role-management.html">Roles</a>
+    <a href="access-requests.html">Access Requests</a>
+
+    <span class="nav-spacer"></span>
+
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+</nav>
+
+<div class="dashboard-container">
+
+    <h2>Access Request Management</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Request ID</th>
+                <th>Employee</th>
+                <th>Department</th>
+                <th>Requested Role</th>
+                <th>Risk Level</th>
+                <th>Status / Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr><td>REQ001</td><td>Ruby</td><td>Finance</td><td>SAP_FIN_ANALYST</td><td>Medium</td><td class="status-approved">Approved</td></tr>
+
+            <tr>
+                <td>REQ002</td><td>Rose</td><td>Human Resources (HR)</td><td>SAP_HR_MANAGER</td><td>Medium</td>
+                <td id="statusREQ002">
+                    <button class="approve-btn" onclick="approveRequest('REQ002')">Approve</button>
+                    <button class="reject-btn" onclick="rejectRequest('REQ002')">Reject</button>
+                </td>
+            </tr>
+
+            <tr><td>REQ003</td><td>Maple</td><td>Procurement</td><td>SAP_PROC_APPROVER</td><td>Medium</td><td class="status-approved">Approved</td></tr>
+
+            <tr>
+                <td>REQ004</td><td>Scarlet</td><td>Sales</td><td>SAP_SALES_MANAGER</td><td>Medium</td>
+                <td id="statusREQ004">
+                    <button class="approve-btn" onclick="approveRequest('REQ004')">Approve</button>
+                    <button class="reject-btn" onclick="rejectRequest('REQ004')">Reject</button>
+                </td>
+            </tr>
+
+            <tr><td>REQ005</td><td>Nova</td><td>Information Technology (IT)</td><td>SAP_BASIS_ADMIN</td><td>High</td><td class="status-approved">Approved</td></tr>
+
+            <tr>
+                <td>REQ006</td><td>Dakshin</td><td>Security Operations</td><td>SAP_SECURITY_ADMIN</td><td>High</td>
+                <td id="statusREQ006">
+                    <button class="approve-btn" onclick="approveRequest('REQ006')">Approve</button>
+                    <button class="reject-btn" onclick="rejectRequest('REQ006')">Reject</button>
+                </td>
+            </tr>
+
+            <tr><td>REQ007</td><td>Falcon</td><td>Internal Audit</td><td>SAP_AUDITOR</td><td>Medium</td><td class="status-approved">Approved</td></tr>
+
+            <tr>
+                <td>REQ008</td><td>Everest</td><td>Executive Management</td><td>SAP_EXEC_REPORTING</td><td>Medium</td>
+                <td id="statusREQ008">
+                    <button class="approve-btn" onclick="approveRequest('REQ008')">Approve</button>
+                    <button class="reject-btn" onclick="rejectRequest('REQ008')">Reject</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

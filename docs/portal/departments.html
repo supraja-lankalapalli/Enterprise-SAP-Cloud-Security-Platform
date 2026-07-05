@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +10,40 @@
 
 <body>
 
-<header>
+<header class="main-header">
     <h1>SL Cloud Technologies</h1>
     <p>Enterprise SAP Cloud Security Platform</p>
 </header>
 
+<nav class="navbar">
+
+    <a href="dashboard.html">Dashboard</a>
+    <a href="departments.html">Departments</a>
+    <a href="user-management.html">Users</a>
+    <a href="role-management.html">Roles</a>
+    <a href="access-requests.html">Access Requests</a>
+
+    <span class="nav-spacer"></span>
+
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+
+</nav>
+
 <div class="dashboard-container">
 
-    <h2>Department Management</h2>
+    <h2>Business Department Management</h2>
 
     <table>
 
         <thead>
+
             <tr>
                 <th>Business Unit ID</th>
                 <th>Business Department</th>
                 <th>Department Manager</th>
                 <th>Employees</th>
             </tr>
+
         </thead>
 
         <tbody>
@@ -35,56 +52,56 @@
                 <td>BU001</td>
                 <td>Finance</td>
                 <td>Gemstone</td>
-                <td>120</td>
+                <td>2</td>
             </tr>
 
             <tr>
                 <td>BU002</td>
                 <td>Human Resources (HR)</td>
                 <td>Flower</td>
-                <td>45</td>
+                <td>2</td>
             </tr>
 
             <tr>
                 <td>BU003</td>
                 <td>Procurement</td>
                 <td>Tree</td>
-                <td>80</td>
+                <td>2</td>
             </tr>
 
             <tr>
                 <td>BU004</td>
                 <td>Sales</td>
                 <td>Color</td>
-                <td>150</td>
+                <td>2</td>
             </tr>
 
             <tr>
                 <td>BU005</td>
                 <td>Information Technology (IT)</td>
                 <td>Cosmos</td>
-                <td>260</td>
+                <td>2</td>
             </tr>
 
             <tr>
                 <td>BU006</td>
                 <td>Security Operations</td>
                 <td>Supraja L.</td>
-                <td>85</td>
+                <td>2</td>
             </tr>
 
             <tr>
                 <td>BU007</td>
                 <td>Internal Audit</td>
                 <td>Bird</td>
-                <td>40</td>
+                <td>2</td>
             </tr>
 
             <tr>
                 <td>BU008</td>
                 <td>Executive Management</td>
                 <td>Mountain</td>
-                <td>25</td>
+                <td>2</td>
             </tr>
 
         </tbody>
@@ -96,4 +113,5 @@
 <script src="app.js"></script>
 
 </body>
+
 </html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SL Cloud Technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <h1>SL Cloud Technologies</h1>
+        <p>Enterprise SAP Cloud Security Platform</p>
+    </header>
+
+    <div class="login-container">
+
+        <h2>Security Administrator Login</h2>
+
+        <p style="margin-bottom:25px; color:#555;">
+            Sign in to access the Enterprise SAP Cloud Security Platform.
+        </p>
+
+        <form id="loginForm">
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Username"
+                required
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                required
+            >
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+        <p id="loginMessage" style="margin-top:20px;font-weight:bold;"></p>
+
+        <hr style="margin:35px 0;">
+
+        <h3>Demo Credentials</h3>
+
+        <p><strong>Username:</strong> supraja</p>
+        <p><strong>Password:</strong> supraja</p>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
