@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoD Analysis - SL Cloud Technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="main-header">
+    <h1>SL Cloud Technologies</h1>
+    <p>Enterprise SAP Cloud Security Platform</p>
+</header>
+
+<nav class="navbar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="departments.html">Departments</a>
+    <a href="user-management.html">Users</a>
+    <a href="role-management.html">Roles</a>
+    <a href="access-requests.html">Access Requests</a>
+    <a href="audit-logs.html">Audit Logs</a>
+    <a href="rbac-matrix.html">RBAC Matrix</a>
+    <a href="sod-analysis.html">SoD Analysis</a>
+
+    <span class="nav-spacer"></span>
+
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+</nav>
+
+<div class="dashboard-container">
+
+    <h2>Segregation of Duties Analysis</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Conflict ID</th>
+                <th>Role A</th>
+                <th>Role B</th>
+                <th>Department</th>
+                <th>Risk Level</th>
+                <th>Recommendation</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>SOD001</td>
+                <td>SAP_FIN_USER</td>
+                <td>SAP_FIN_ANALYST</td>
+                <td>Finance</td>
+                <td class="status-pending">Medium</td>
+                <td>Review finance access before approval.</td>
+            </tr>
+
+            <tr>
+                <td>SOD002</td>
+                <td>SAP_PROC_USER</td>
+                <td>SAP_PROC_APPROVER</td>
+                <td>Procurement</td>
+                <td class="status-rejected">High</td>
+                <td>Separate requester and approver responsibilities.</td>
+            </tr>
+
+            <tr>
+                <td>SOD003</td>
+                <td>SAP_BASIS_ADMIN</td>
+                <td>SAP_SECURITY_ADMIN</td>
+                <td>IT / Security Operations</td>
+                <td class="status-rejected">High</td>
+                <td>Restrict combined technical and security administration access.</td>
+            </tr>
+
+            <tr>
+                <td>SOD004</td>
+                <td>SAP_SECURITY_ADMIN</td>
+                <td>SAP_AUDITOR</td>
+                <td>Security Operations / Internal Audit</td>
+                <td class="status-rejected">High</td>
+                <td>Audit users should not administer security roles.</td>
+            </tr>
+
+            <tr>
+                <td>SOD005</td>
+                <td>SAP_EXEC_REPORTING</td>
+                <td>SAP_FIN_ANALYST</td>
+                <td>Executive Management / Finance</td>
+                <td class="status-pending">Medium</td>
+                <td>Require executive approval and periodic review.</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

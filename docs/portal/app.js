@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
         "user-management.html",
         "role-management.html",
         "access-requests.html",
-        "audit-logs.html"
+        "audit-logs.html",
+        "rbac-matrix.html",
+        "sod-analysis.html"
     ];
 
     const currentPage = window.location.pathname.split("/").pop();
