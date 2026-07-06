@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "rbac-matrix.html",
         "sod-analysis.html",
         "jml-workflow.html",
-        "compliance-dashboard.html"
+        "compliance-dashboard.html",
+        "aws-security.html"
     ];
 
     const currentPage = window.location.pathname.split("/").pop();

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compliance Dashboard - SL Cloud Technologies</title>
+    <title>AWS Security - SL Cloud Technologies</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -34,37 +34,38 @@
 
 <div class="dashboard-container">
 
-    <h2>Compliance Dashboard</h2>
+    <h2>AWS Security Dashboard</h2>
 
     <section class="cards">
         <div class="card">
-            <h3>Total Users</h3>
-            <p>16</p>
+            <h3>IAM Users</h3>
+            <p>235</p>
         </div>
 
         <div class="card">
-            <h3>Active Roles</h3>
-            <p>16</p>
+            <h3>CloudTrail Events</h3>
+            <p>1,248</p>
         </div>
 
         <div class="card">
-            <h3>Pending Requests</h3>
-            <p>4</p>
+            <h3>CloudWatch Alarms</h3>
+            <p>6</p>
         </div>
 
         <div class="card">
-            <h3>SoD Conflicts</h3>
-            <p>5</p>
+            <h3>Security Groups</h3>
+            <p>12</p>
         </div>
     </section>
 
-    <h2>Compliance Summary</h2>
+    <h2>AWS Security Controls</h2>
 
     <table>
         <thead>
             <tr>
-                <th>Control Area</th>
-                <th>Description</th>
+                <th>Control ID</th>
+                <th>AWS Service</th>
+                <th>Security Purpose</th>
                 <th>Status</th>
                 <th>Risk Level</th>
             </tr>
@@ -72,38 +73,51 @@
 
         <tbody>
             <tr>
-                <td>IAM</td>
-                <td>User access is centrally managed through the portal.</td>
-                <td class="status-approved">Compliant</td>
+                <td>AWS001</td>
+                <td>AWS IAM</td>
+                <td>Controls user access to AWS resources.</td>
+                <td class="status-approved">Enabled</td>
                 <td>Low</td>
             </tr>
 
             <tr>
-                <td>RBAC</td>
-                <td>Roles are mapped to departments and permission levels.</td>
-                <td class="status-approved">Compliant</td>
+                <td>AWS002</td>
+                <td>AWS CloudTrail</td>
+                <td>Records API activity and user actions.</td>
+                <td class="status-approved">Enabled</td>
                 <td>Low</td>
             </tr>
 
             <tr>
-                <td>SoD</td>
-                <td>Conflicting role combinations are identified for review.</td>
+                <td>AWS003</td>
+                <td>Amazon CloudWatch</td>
+                <td>Monitors application performance and alarms.</td>
+                <td class="status-approved">Enabled</td>
+                <td>Low</td>
+            </tr>
+
+            <tr>
+                <td>AWS004</td>
+                <td>Amazon S3</td>
+                <td>Stores audit reports and security documentation.</td>
                 <td class="status-pending">Review Required</td>
-                <td>High</td>
-            </tr>
-
-            <tr>
-                <td>JML</td>
-                <td>Joiner, mover, and leaver events are tracked.</td>
-                <td class="status-pending">In Progress</td>
                 <td>Medium</td>
             </tr>
 
             <tr>
-                <td>Audit Logging</td>
-                <td>Security actions are recorded in audit logs.</td>
-                <td class="status-approved">Compliant</td>
-                <td>Low</td>
+                <td>AWS005</td>
+                <td>Amazon EC2</td>
+                <td>Hosts enterprise application workloads.</td>
+                <td class="status-approved">Configured</td>
+                <td>Medium</td>
+            </tr>
+
+            <tr>
+                <td>AWS006</td>
+                <td>Security Groups</td>
+                <td>Controls inbound and outbound traffic for instances.</td>
+                <td class="status-pending">Review Required</td>
+                <td>High</td>
             </tr>
         </tbody>
     </table>
