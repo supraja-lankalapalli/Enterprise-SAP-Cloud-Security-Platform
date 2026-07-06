@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JML Workflow - SL Cloud Technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="main-header">
+    <h1>SL Cloud Technologies</h1>
+    <p>Enterprise SAP Cloud Security Platform</p>
+</header>
+
+<nav class="navbar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="departments.html">Departments</a>
+    <a href="user-management.html">Users</a>
+    <a href="role-management.html">Roles</a>
+    <a href="access-requests.html">Access Requests</a>
+    <a href="audit-logs.html">Audit Logs</a>
+    <a href="rbac-matrix.html">RBAC Matrix</a>
+    <a href="sod-analysis.html">SoD Analysis</a>
+    <a href="jml-workflow.html">JML Workflow</a>
+
+    <span class="nav-spacer"></span>
+
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+</nav>
+
+<div class="dashboard-container">
+
+    <h2>Joiner, Mover, Leaver Workflow</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Case ID</th>
+                <th>Employee</th>
+                <th>Event Type</th>
+                <th>Department</th>
+                <th>Assigned Role</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr><td>JML001</td><td>Ruby</td><td>Joiner</td><td>Finance</td><td>SAP_FIN_USER</td><td class="status-approved">Completed</td></tr>
+            <tr><td>JML002</td><td>Rose</td><td>Mover</td><td>Human Resources (HR)</td><td>SAP_HR_MANAGER</td><td class="status-pending">Pending Review</td></tr>
+            <tr><td>JML003</td><td>Cedar</td><td>Mover</td><td>Procurement</td><td>SAP_PROC_APPROVER</td><td class="status-approved">Completed</td></tr>
+            <tr><td>JML004</td><td>Dakshin</td><td>Joiner</td><td>Security Operations</td><td>SAP_SECURITY_ADMIN</td><td class="status-approved">Completed</td></tr>
+            <tr><td>JML005</td><td>Raven</td><td>Leaver</td><td>Internal Audit</td><td>SAP_AUDIT_VIEWER</td><td class="status-rejected">Access Removed</td></tr>
+            <tr><td>JML006</td><td>Denali</td><td>Joiner</td><td>Executive Management</td><td>SAP_EXEC_REPORTING</td><td class="status-pending">Pending Approval</td></tr>
+        </tbody>
+    </table>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

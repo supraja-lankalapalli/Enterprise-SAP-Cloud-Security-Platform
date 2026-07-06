@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "access-requests.html",
         "audit-logs.html",
         "rbac-matrix.html",
-        "sod-analysis.html"
+        "sod-analysis.html",
+        "jml-workflow.html"
     ];
 
     const currentPage = window.location.pathname.split("/").pop();
