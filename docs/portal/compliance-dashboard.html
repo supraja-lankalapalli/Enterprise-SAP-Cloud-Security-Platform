@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compliance Dashboard - SL Cloud Technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="main-header">
+    <h1>SL Cloud Technologies</h1>
+    <p>Enterprise SAP Cloud Security Platform</p>
+</header>
+
+<nav class="navbar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="departments.html">Departments</a>
+    <a href="user-management.html">Users</a>
+    <a href="role-management.html">Roles</a>
+    <a href="access-requests.html">Access Requests</a>
+    <a href="audit-logs.html">Audit Logs</a>
+    <a href="rbac-matrix.html">RBAC Matrix</a>
+    <a href="sod-analysis.html">SoD Analysis</a>
+    <a href="jml-workflow.html">JML Workflow</a>
+    <a href="compliance-dashboard.html">Compliance</a>
+
+    <span class="nav-spacer"></span>
+
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+</nav>
+
+<div class="dashboard-container">
+
+    <h2>Compliance Dashboard</h2>
+
+    <section class="cards">
+        <div class="card">
+            <h3>Total Users</h3>
+            <p>16</p>
+        </div>
+
+        <div class="card">
+            <h3>Active Roles</h3>
+            <p>16</p>
+        </div>
+
+        <div class="card">
+            <h3>Pending Requests</h3>
+            <p>4</p>
+        </div>
+
+        <div class="card">
+            <h3>SoD Conflicts</h3>
+            <p>5</p>
+        </div>
+    </section>
+
+    <h2>Compliance Summary</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Control Area</th>
+                <th>Description</th>
+                <th>Status</th>
+                <th>Risk Level</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>IAM</td>
+                <td>User access is centrally managed through the portal.</td>
+                <td class="status-approved">Compliant</td>
+                <td>Low</td>
+            </tr>
+
+            <tr>
+                <td>RBAC</td>
+                <td>Roles are mapped to departments and permission levels.</td>
+                <td class="status-approved">Compliant</td>
+                <td>Low</td>
+            </tr>
+
+            <tr>
+                <td>SoD</td>
+                <td>Conflicting role combinations are identified for review.</td>
+                <td class="status-pending">Review Required</td>
+                <td>High</td>
+            </tr>
+
+            <tr>
+                <td>JML</td>
+                <td>Joiner, mover, and leaver events are tracked.</td>
+                <td class="status-pending">In Progress</td>
+                <td>Medium</td>
+            </tr>
+
+            <tr>
+                <td>Audit Logging</td>
+                <td>Security actions are recorded in audit logs.</td>
+                <td class="status-approved">Compliant</td>
+                <td>Low</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
