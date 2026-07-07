@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
         "jml-workflow.html",
         "compliance-dashboard.html",
         "aws-security.html",
-        "user-provisioning.html"
+        "user-provisioning.html",
+        "password-reset.html",
+        "emergency-access.html"
     ];
 
     const currentPage = window.location.pathname.split("/").pop();
