@@ -13,7 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "sod-analysis.html",
         "jml-workflow.html",
         "compliance-dashboard.html",
-        "aws-security.html"
+        "aws-security.html",
+        "user-provisioning.html"
     ];
 
     const currentPage = window.location.pathname.split("/").pop();

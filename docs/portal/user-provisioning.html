@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Provisioning - SL Cloud Technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="main-header">
+    <h1>SL Cloud Technologies</h1>
+    <p>Enterprise SAP Cloud Security Platform</p>
+</header>
+
+<nav class="navbar">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="departments.html">Departments</a>
+    <a href="user-management.html">Users</a>
+    <a href="role-management.html">Roles</a>
+    <a href="access-requests.html">Access Requests</a>
+    <a href="audit-logs.html">Audit Logs</a>
+    <a href="rbac-matrix.html">RBAC Matrix</a>
+    <a href="sod-analysis.html">SoD Analysis</a>
+    <a href="jml-workflow.html">JML Workflow</a>
+    <a href="compliance-dashboard.html">Compliance</a>
+    <a href="aws-security.html">AWS Security</a>
+    <a href="user-provisioning.html">Provisioning</a>
+
+    <span class="nav-spacer"></span>
+
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+</nav>
+
+<div class="dashboard-container">
+
+    <h2>User Provisioning</h2>
+
+    <p>
+        Create a new SAP user, assign the correct business department, manager,
+        and SAP security role.
+    </p>
+
+    <form id="provisioningForm">
+
+        <label for="employeeId">Employee ID</label>
+        <input type="text" id="employeeId" placeholder="Example: U1017" required>
+
+        <label for="employeeName">Employee Name</label>
+        <input type="text" id="employeeName" placeholder="Example: Sapphire" required>
+
+        <label for="department">Department</label>
+        <select id="department" required>
+            <option value="">Select Department</option>
+            <option value="Finance">Finance</option>
+            <option value="Human Resources (HR)">Human Resources (HR)</option>
+            <option value="Procurement">Procurement</option>
+            <option value="Sales">Sales</option>
+            <option value="Information Technology (IT)">Information Technology (IT)</option>
+            <option value="Security Operations">Security Operations</option>
+            <option value="Internal Audit">Internal Audit</option>
+            <option value="Executive Management">Executive Management</option>
+        </select>
+
+        <label for="manager">Manager</label>
+        <select id="manager" required>
+            <option value="">Select Manager</option>
+            <option value="Gemstone">Gemstone</option>
+            <option value="Flower">Flower</option>
+            <option value="Tree">Tree</option>
+            <option value="Color">Color</option>
+            <option value="Cosmos">Cosmos</option>
+            <option value="Supraja L.">Supraja L.</option>
+            <option value="Bird">Bird</option>
+            <option value="Mountain">Mountain</option>
+        </select>
+
+        <label for="sapRole">SAP Role</label>
+        <select id="sapRole" required>
+            <option value="">Select SAP Role</option>
+            <option value="SAP_FIN_USER">SAP_FIN_USER</option>
+            <option value="SAP_FIN_ANALYST">SAP_FIN_ANALYST</option>
+            <option value="SAP_HR_USER">SAP_HR_USER</option>
+            <option value="SAP_HR_MANAGER">SAP_HR_MANAGER</option>
+            <option value="SAP_PROC_USER">SAP_PROC_USER</option>
+            <option value="SAP_PROC_APPROVER">SAP_PROC_APPROVER</option>
+            <option value="SAP_SALES_USER">SAP_SALES_USER</option>
+            <option value="SAP_SALES_MANAGER">SAP_SALES_MANAGER</option>
+            <option value="SAP_BASIS_ADMIN">SAP_BASIS_ADMIN</option>
+            <option value="SAP_IT_SUPPORT">SAP_IT_SUPPORT</option>
+            <option value="SAP_SECURITY_ADMIN">SAP_SECURITY_ADMIN</option>
+            <option value="SAP_SECURITY_ANALYST">SAP_SECURITY_ANALYST</option>
+            <option value="SAP_AUDITOR">SAP_AUDITOR</option>
+            <option value="SAP_AUDIT_VIEWER">SAP_AUDIT_VIEWER</option>
+            <option value="SAP_EXEC_VIEWER">SAP_EXEC_VIEWER</option>
+            <option value="SAP_EXEC_REPORTING">SAP_EXEC_REPORTING</option>
+        </select>
+
+        <button type="submit">Provision User</button>
+
+    </form>
+
+    <div id="provisioningResult"></div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
