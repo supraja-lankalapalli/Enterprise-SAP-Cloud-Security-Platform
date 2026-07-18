@@ -2,7 +2,7 @@
 
 ## Overview
 
-This portal is part of the Enterprise SAP Cloud Security Platform project. It demonstrates identity administration, role-based access control, access governance, audit tracking, compliance monitoring, AWS security visibility, and SAP security support workflows.
+This portal is part of the Enterprise SAP Security and Identity Governance Platform project. It demonstrates identity administration, role-based access control, access governance, audit tracking, compliance monitoring, AWS security visibility, and SAP security support workflows.
 
 ## Features
 
