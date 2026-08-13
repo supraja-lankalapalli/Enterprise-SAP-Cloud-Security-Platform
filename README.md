@@ -39,9 +39,9 @@ The portal demonstrates several common SAP Security Administration processes.
 
 ### Authentication & Access Control
 
-- Login Portal
-- Secure Navigation
-- Session-based Authentication
+- Demo Login Portal
+- Protected Portal Navigation
+- Login State Management
 - Logout Functionality
 
 ### Identity Administration
@@ -54,7 +54,7 @@ The portal demonstrates several common SAP Security Administration processes.
 ### Access Governance
 
 - Access Requests
-- RBAC Matrix
+- Role-Based Access Control (RBAC) Matrix
 - Password Reset Requests
 - Emergency Access (Firefighter ID)
 
@@ -280,10 +280,12 @@ Enterprise-SAP-Security-Identity-Governance-Platform/
 │   ├── Business-Problem.md
 │   ├── Company-Profile.md
 │   ├── Project-Scope.md
+│   ├── portal-entry-login.html
 │   └── portal/
 │
 ├── diagrams/
-│   └── access-governance-workflow.md
+│   ├── access-governance-workflow.md
+│   └── enterprise-security-architecture.md
 │
 └── README.md
 ```
@@ -315,7 +317,7 @@ More importantly, I learned how these concepts work together as part of a secure
 
 The core Enterprise SAP Security Portal has been completed.
 
-My current focus is strengthening my SAP Security knowledge, improving this project, and preparing to explain both the technical concepts and design decisions during interviews.
+My current focus is strengthening my SAP Security knowledge, improving this project, and preparing to explain both the technical concepts.
 
 ---
 
@@ -324,13 +326,6 @@ My current focus is strengthening my SAP Security knowledge, improving this proj
 As I continue learning SAP Security, I plan to expand this project by exploring:
 
 - SAP GRC Access Control
-- SAP S/4HANA Security
-- SAP Business Technology Platform (BTP)
-- SAP Identity Authentication Service (IAS)
-- SAP Identity Provisioning Service (IPS)
-- Multi-Factor Authentication (MFA)
-- Advanced role design concepts
-- Automated access certification
 
 Future enhancements will be added only after I have implemented them.
 

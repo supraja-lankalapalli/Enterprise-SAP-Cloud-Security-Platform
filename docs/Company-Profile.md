@@ -4,7 +4,7 @@
 
 SL Cloud Technologies is a global enterprise specializing in enterprise technology solutions, digital transformation, and IT consulting services. The organization supports businesses across multiple industries by delivering secure, reliable, and scalable technology solutions while maintaining high standards of security, governance, and compliance.
 
-To support its business operations, SL CLoud Technologies uses **SAP S/4HANA** as its Enterprise Resource Planning (ERP) platform. SAP enables the organization to manage critical business processes including finance, procurement, human resources, sales, and enterprise operations.
+To support its business operations, SL Cloud Technologies uses **SAP S/4HANA** as its Enterprise Resource Planning (ERP) platform. SAP enables the organization to manage critical business processes including finance, procurement, human resources, sales, and enterprise operations.
 
 As the organization continues to grow, managing user identities, business roles, and access permissions across SAP applications has become an essential part of maintaining security, operational efficiency, and regulatory compliance.
 
@@ -14,7 +14,7 @@ As the organization continues to grow, managing user identities, business roles,
 
 | Attribute | Details |
 |-----------|---------|
-| **Company Name** | SL Cloud Technologies |
+| **Company Name** | SL Cloud Technologies  |
 | **Industry** | Enterprise Technology & IT Consulting |
 | **Headquarters** | Wisconsin, USA |
 | **Employees** | 12,500+ |
@@ -42,7 +42,7 @@ Each department is assigned business roles and receives only the SAP access requ
 
 # Security Strategy
 
-To protect business-critical information and maintain secure access to SAP applications, SL CLoud Technologies follows enterprise security best practices including:
+To protect business-critical information and maintain secure access to SAP applications, SL Cloud Technologies follows enterprise security best practices including:
 
 - Identity & Access Management (IAM)
 - Role-Based Access Control (RBAC)
@@ -60,6 +60,6 @@ To protect business-critical information and maintain secure access to SAP appli
 
 # Business Objective
 
-SL CLoud Technologies is committed to maintaining a secure and well-governed SAP environment by implementing effective identity management, standardized role administration, and enterprise access governance.
+SL Cloud Technologies is committed to maintaining a secure and well-governed SAP environment by implementing effective identity management, standardized role administration, and enterprise access governance.
 
 This project demonstrates how SAP Security processes can work together to support secure business operations, improve audit readiness, strengthen compliance, and ensure users receive the appropriate level of access based on their business responsibilities.
