@@ -55,6 +55,8 @@ The portal demonstrates several common SAP Security Administration processes.
 
 - Access Requests
 - Role-Based Access Control (RBAC) Matrix
+- Segregation of Duties (SoD) Analysis
+- Joiner-Mover-Leaver (JML) Workflow
 - Password Reset Requests
 - Emergency Access (Firefighter ID)
 
@@ -318,16 +320,6 @@ More importantly, I learned how these concepts work together as part of a secure
 The core Enterprise SAP Security Portal has been completed.
 
 My current focus is strengthening my SAP Security knowledge, improving this project, and preparing to explain both the technical concepts.
-
----
-
-# Future Enhancements
-
-As I continue learning SAP Security, I plan to expand this project by exploring:
-
-- SAP GRC Access Control
-
-Future enhancements will be added only after I have implemented them.
 
 ---
 
